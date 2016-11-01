@@ -1,0 +1,207 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Colors
+
+$gray-dark:                 rgb(48,48,48) !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #0275d8 !default;
+$brand-success:             #21971d !default;
+$brand-info:                #3179cd !default;
+$brand-warning:             #f07d00 !default;
+$brand-danger:              #c61a0c !default;
+$brand-inverse:             $gray-dark !default;
+
+
+// Options
+
+$enable-flex:               false !default;
+$enable-rounded:            true !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       false !default;
+
+// Typography
+
+$font-family-sans-serif: sans-serif !default;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root: 13px !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$line-height-base: 1.5 !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+//$border-radius:          .15rem !default;
+//$border-radius-lg:       .3rem !default;
+//$border-radius-sm:       .1rem !default;
+$border-radius:          .33rem !default;
+$border-radius-lg:       .4rem !default;
+$border-radius-sm:       .25rem !default;
+
+// Buttons
+
+.btn-secondary {
+  background-image: linear-gradient(to bottom, #fff, #e0e0e0 50%);
+  box-shadow: 0 1px 0 white inset;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 white;
+  margin: 0;
+  padding: 0.33333em 1em 0.27778em;
+}
+
+.btn-secondary:hover {
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary:active, .btn-secondary.is-active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset, 0 1px 0.5em rgba(0, 0, 0, 0.15) inset;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary.is-disabled, .btn-secondary[disabled] {
+  background-color: #e0e0e0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+  background-image: linear-gradient(to bottom, #2ca5dc, #3179cd 50%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.btn-primary:hover {
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active, .btn-primary.is-active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset, 0 1px 0.5em rgba(0, 0, 0, 0.15) inset;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3)
+}
+
+.btn-primary.is-disabled, .btn-primary[disabled] {
+  background-color: #3179cd;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-warning {
+  background-image: linear-gradient(to bottom, #f09b58, #f07d00 50%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}   
+
+.btn-warning:hover {
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-warning:active, .btn-warning.is-active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset, 0 1px 0.5em rgba(0, 0, 0, 0.15) inset;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3)
+}
+
+.btn-warning.is-disabled, .btn-warning[disabled] {
+  background-color: #f07d00;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-success {
+  background-image: linear-gradient(to bottom, #50b74e, #21971d 50%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.btn-success:hover {
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-success:active, .btn-success.is-active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset, 0 1px 0.5em rgba(0, 0, 0, 0.15) inset;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3)
+}
+
+.btn-success.is-disabled, .btn-success[disabled] {
+  background-color: #21971d;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  -webkit-text-fill-color: #fff
+}
+
+.btn-danger {
+  background-image: linear-gradient(to bottom, #db8179, #c61a0c 50%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+.btn-danger:hover {
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+}
+
+.btn-danger:active, .btn-danger.is-active {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset, 0 1px 0.5em rgba(0, 0, 0, 0.15) inset;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3)
+}
+
+.btn-danger.is-disabled, .btn-danger[disabled] {
+  background-color: #c61a0c;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+$btn-padding-y:                  .42rem !default;
+$btn-line-height:                normal !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba(255,255,255,.4) !default;
+//$btn-active-box-shadow:          inset 0 3px 5px rgba(0,0,0,.125) !default;
+
+$btn-secondary-color:            #303030 !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-radius:          .33rem !default;
+$btn-radius-lg:       .4rem !default;
+$btn-radius-sm:       .25rem !default;
+
+.badge {
+  text-transform: uppercase;
+}
+
+// Form states and alerts
+//
+// Define colors for form feedback states and, by default, alerts.
+
+.has-danger .form-control-danger,
+.has-success .form-control-success,
+.has-warning .form-control-warning {
+  background-image: none !important;
+}
+
+$state-success-text:             #21971d !default;
+$state-success-bg:               #dae6dc !default;
+
+$state-info-text:                #3179cd !default;
+$state-info-bg:                  #edf0f5 !default;
+
+$state-warning-text:             #a07830 !default;
+$state-warning-bg:               #fff8d8 !default;
+
+$state-danger-text:              #c61a0c !default;
+$state-danger-bg:                #f6e6e6 !default;
