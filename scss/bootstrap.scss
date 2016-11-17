@@ -12,7 +12,7 @@
 
 // Reset and dependencies
 @import "normalize";
-@import "print";
+// @import "print"; TODO skip for now to minimize conflict
 
 // Core CSS
 @import "reboot";
@@ -45,7 +45,7 @@
 @import "close";
 
 // Components w/ JavaScript
-@import "modal";
+// @import "modal"; TODO temp to avoid apm conflict
 @import "tooltip";
 @import "popover";
 @import "carousel";
