@@ -1,7 +1,7 @@
 {
   "name": "bootstrap",
   "description": "Bootstrap 4 with APM theme",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "keywords": [
     "css",
     "sass",
@@ -17,6 +17,7 @@
   "author": "Gary Thomas",
   "scripts": {
     "change-version": "node grunt/change-version.js",
+    "dist": "grunt",
     "eslint": "eslint --config js/.eslintrc.json js/src",
     "jscs": "jscs --config=js/.jscsrc js/src js/tests/unit docs/assets/js/src grunt Gruntfile.js docs/assets/js/ie-emulation-modes-warning.js docs/assets/js/ie10-viewport-bug-workaround.js",
     "htmlhint": "htmlhint --config docs/.htmlhintrc _gh_pages/",
