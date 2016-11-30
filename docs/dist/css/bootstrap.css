@@ -4908,7 +4908,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .alert {
-  padding: 1rem 0.7rem;
+  padding: 0.7rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.33rem;
@@ -4923,13 +4923,13 @@ a.badge:focus, a.badge:hover {
 }
 
 .alert-dismissible {
-  padding-right: 1.4rem;
+  padding-right: 2rem;
 }
 
 .alert-dismissible .close {
   position: relative;
   top: -.125rem;
-  right: -0.7rem;
+  right: -1rem;
   color: inherit;
 }
 
