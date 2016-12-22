@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v4.0.4 ()
+ * Bootstrap v4.0.5 ()
  * Copyright 2011-2016 Gary Thomas
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
