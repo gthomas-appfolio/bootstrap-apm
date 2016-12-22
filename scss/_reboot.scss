@@ -158,20 +158,19 @@ blockquote {
 // Links
 //
 
-// TODO temp to minimize APM conflicts:
-//a {
-//  color: $link-color;
-//  text-decoration: $link-decoration;
-//
-//  @include hover-focus {
-//    color: $link-hover-color;
-//    text-decoration: $link-hover-decoration;
-//  }
-//
-//  &:focus {
-//    @include tab-focus();
-//  }
-//}
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  @include hover-focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    @include tab-focus();
+  }
+}
 
 // And undo these styles for placeholder links/named anchors (without href)
 // which have not been made explicitly keyboard-focusable (without tabindex).

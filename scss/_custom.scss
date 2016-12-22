@@ -18,6 +18,16 @@ $brand-warning:             #f07d00 !default;
 $brand-danger:              #c61a0c !default;
 $brand-inverse:             $gray-dark !default;
 
+$link-color:            #3179cd !default;
+$link-hover-color:      $link-color !default;
+
+// TODO add?
+// a:focus {
+//     outline: thin dotted
+// }
+// a:active,a:hover {
+//     outline: 0
+// }
 
 // Options
 
@@ -218,3 +228,63 @@ $state-warning-bg:               #fff8d8 !default;
 
 $state-danger-text:              #c61a0c !default;
 $state-danger-bg:                #f6e6e6 !default;
+
+// Pagination
+
+$pagination-padding-x:                .75rem !default;
+$pagination-padding-y:                .25rem !default;
+$pagination-padding-x-sm:             .75rem !default;
+$pagination-padding-y-sm:             .25rem !default;
+$pagination-padding-x-lg:             .75rem !default;
+$pagination-padding-y-lg:             .25rem !default;
+
+$pagination-bg:                        transparent !default;
+$pagination-border-color:              transparent !default;
+$pagination-color:                     $link-color !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  transparent !default;
+$pagination-hover-border:              transparent !default;
+
+$pagination-active-color:             #3179cd !default;
+$pagination-active-bg:                #d6e7f3 !default;
+$pagination-active-border:            #a5ceeb !default;
+
+.pagination, .pagination-lg, .pagination-sm {
+  .page-item {
+    .page-link {
+      border-radius: 3px !important;
+    }
+    a {
+      color: $link-color !important;
+      cursor: pointer;
+    }
+  }
+}
+
+// Tables
+
+$table-bg-accent:                #f6f6f6 !default;
+$table-bg-hover:                 #ffffd5 !default;
+$table-border-color:             transparent !default;
+$table-sm-cell-padding:         .33rem .5rem !default;
+$table-head-border-color:        #b3b3b3 !default;
+$table-head-color:               #303030 !default;
+$table-head-bg:                  #f4f4f4 !default;
+
+.table {
+  th {
+    font-weight: normal;
+    white-space: nowrap;
+  }
+
+  thead th {
+    background-image: linear-gradient(to bottom, #fff, #e0e0e0 50%);
+    border-top: 1px solid $table-head-border-color;
+    border-right: 1px solid $table-head-border-color;
+    border-bottom: 1px solid $table-head-border-color !important;
+    &:first-child {
+      border-left: 1px solid $table-head-border-color;
+    }
+  }
+}
