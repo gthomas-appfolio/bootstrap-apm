@@ -147,6 +147,34 @@
   background-image: none !important;
 }
 
+.pagination .page-item .page-link, .pagination-lg .page-item .page-link, .pagination-sm .page-item .page-link {
+  border-radius: 3px !important;
+}
+
+.pagination .page-item a, .pagination-lg .page-item a, .pagination-sm .page-item a {
+  color: #3179cd !important;
+  cursor: pointer;
+}
+
+.table th {
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.table thead th {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #e0e0e0));
+  background-image: -webkit-linear-gradient(top, #fff, #e0e0e0 50%);
+  background-image: -o-linear-gradient(top, #fff, #e0e0e0 50%);
+  background-image: linear-gradient(to bottom, #fff, #e0e0e0 50%);
+  border-top: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3 !important;
+}
+
+.table thead th:first-child {
+  border-left: 1px solid #b3b3b3;
+}
+
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -461,6 +489,21 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+}
+
+a {
+  color: #3179cd;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #3179cd;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 a:not([href]):not([tabindex]) {
@@ -1873,16 +1916,16 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #eceeef;
+  border-top: 1px solid transparent;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #eceeef;
+  border-bottom: 2px solid transparent;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #eceeef;
+  border-top: 2px solid transparent;
 }
 
 .table .table {
@@ -1891,16 +1934,16 @@ pre code {
 
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem;
+  padding: 0.33rem 0.5rem;
 }
 
 .table-bordered {
-  border: 1px solid #eceeef;
+  border: 1px solid transparent;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #eceeef;
+  border: 1px solid transparent;
 }
 
 .table-bordered thead th,
@@ -1909,26 +1952,26 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f6f6f6;
 }
 
 .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #ffffd5;
 }
 
 .table-active,
 .table-active > th,
 .table-active > td {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #ffffd5;
 }
 
 .table-hover .table-active:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #ffffbc;
 }
 
 .table-hover .table-active:hover > td,
 .table-hover .table-active:hover > th {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #ffffbc;
 }
 
 .table-success,
@@ -1997,8 +2040,8 @@ pre code {
 }
 
 .thead-default th {
-  color: #55595c;
-  background-color: #eceeef;
+  color: #303030;
+  background-color: #f4f4f4;
 }
 
 .table-inverse {
@@ -2034,13 +2077,13 @@ pre code {
 
 .table-reflow th,
 .table-reflow td {
-  border-top: 1px solid #eceeef;
-  border-left: 1px solid #eceeef;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 .table-reflow th:last-child,
 .table-reflow td:last-child {
-  border-right: 1px solid #eceeef;
+  border-right: 1px solid transparent;
 }
 
 .table-reflow thead:last-child tr:last-child th,
@@ -2049,7 +2092,7 @@ pre code {
 .table-reflow tbody:last-child tr:last-child td,
 .table-reflow tfoot:last-child tr:last-child th,
 .table-reflow tfoot:last-child tr:last-child td {
-  border-bottom: 1px solid #eceeef;
+  border-bottom: 1px solid transparent;
 }
 
 .table-reflow tr {
@@ -2059,7 +2102,7 @@ pre code {
 .table-reflow tr th,
 .table-reflow tr td {
   display: block !important;
-  border: 1px solid #eceeef;
+  border: 1px solid transparent;
 }
 
 .form-control {
@@ -3023,7 +3066,7 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #0275d8;
+  color: #3179cd;
   border-radius: 0;
 }
 
@@ -3042,7 +3085,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link:focus, .btn-link:hover {
-  color: #014c8c;
+  color: #3179cd;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4741,10 +4784,10 @@ tbody.collapse.active {
 
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
   z-index: 2;
-  color: #fff;
+  color: #3179cd;
   cursor: default;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: #d6e7f3;
+  border-color: #a5ceeb;
 }
 
 .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
@@ -4758,22 +4801,22 @@ tbody.collapse.active {
 .page-link {
   position: relative;
   float: left;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   margin-left: -1px;
-  color: #0275d8;
+  color: #3179cd;
   text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
 .page-link:focus, .page-link:hover {
-  color: #014c8c;
-  background-color: #eceeef;
-  border-color: #ddd;
+  color: #3179cd;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .pagination-lg .page-link {
-  padding: 0.75rem 1.5rem;
+  padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
 }
 
@@ -4788,7 +4831,7 @@ tbody.collapse.active {
 }
 
 .pagination-sm .page-link {
-  padding: 0.275rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
 }
 
