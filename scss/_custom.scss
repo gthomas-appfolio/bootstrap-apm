@@ -19,7 +19,8 @@ $brand-danger:              #c61a0c !default;
 $brand-inverse:             $gray-dark !default;
 
 $link-color:            #3179cd !default;
-$link-hover-color:      $link-color !default;
+$link-hover-color:      inherit !default;
+$link-hover-decoration: none !default;
 
 // TODO add?
 // a:focus {

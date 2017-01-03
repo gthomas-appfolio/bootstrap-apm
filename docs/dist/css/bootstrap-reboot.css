@@ -491,8 +491,8 @@ a {
 }
 
 a:focus, a:hover {
-  color: #3179cd;
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:focus {

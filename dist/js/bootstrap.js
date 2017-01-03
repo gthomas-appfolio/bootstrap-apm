@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v4.0.5 ()
- * Copyright 2011-2016 Gary Thomas
+ * Bootstrap v4.0.6 ()
+ * Copyright 2011-2017 Gary Thomas
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
