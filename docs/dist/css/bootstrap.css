@@ -497,8 +497,8 @@ a {
 }
 
 a:focus, a:hover {
-  color: #3179cd;
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:focus {
@@ -3085,8 +3085,8 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link:focus, .btn-link:hover {
-  color: #3179cd;
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -4810,7 +4810,7 @@ tbody.collapse.active {
 }
 
 .page-link:focus, .page-link:hover {
-  color: #3179cd;
+  color: inherit;
   background-color: transparent;
   border-color: transparent;
 }
